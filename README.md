@@ -1,5 +1,7 @@
 # COMP 102 University of KwaZulu-Natal Practical Solutions
 
+![](ukzn-logo.png)
+
 Welcome to the COMP 102 practical solutions repository. This repository contains solutions to practical assignments for the University of KwaZulu-Natal's COMP 102 course. These solutions have been independently completed by a student (the repository owner) and are provided for reference and learning purposes.
 
 ## Folder Structure
