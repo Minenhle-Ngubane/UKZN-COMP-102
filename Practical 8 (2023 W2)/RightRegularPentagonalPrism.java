@@ -61,13 +61,4 @@ class RightRegularPentagonalPrism {
     public String toString() {
         return "RightRegularPentagonalPrism [sideLength=" + sideLength + ", height=" + height + "]";
     }
-
-    public static void main(String[] args) {
-        // Example usage:
-        RightRegularPentagonalPrism prism = new RightRegularPentagonalPrism(5.0, 3.0);
-        System.out.println(prism);
-        System.out.println("Base Area: " + prism.getBaseArea());
-        System.out.println("Volume: " + prism.getVolume());
-        System.out.println("Surface Area: " + prism.getSurfaceArea());
-    }
 }
