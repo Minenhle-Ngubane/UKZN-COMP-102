@@ -1,5 +1,3 @@
-import java.lang.Math;
-
 class RightRegularPentagonalPrism {
     private double sideLength;
     private double height;

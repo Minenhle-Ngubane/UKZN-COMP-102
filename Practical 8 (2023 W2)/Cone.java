@@ -1,5 +1,3 @@
-import java.lang.Math;
-
 class Cone {
     private double height;
     private double radius;
