@@ -55,7 +55,6 @@ class Cone {
         return Math.PI * Math.pow(radius, 2);
     }
 
-    @Override
     public String toString() {
         return "Cone [height=" + height + ", radius=" + radius + "]";
     }

@@ -41,8 +41,8 @@ class RightRegularPentagonalPrism {
 
     // Calculate the area of the base (pentagon)
     public double getBaseArea() {
-        double apothem = 0.5 * sideLength / Math.tan(Math.PI / 5); // Apothem of the regular pentagon
-        double basePerimeter = 5 * sideLength; // Perimeter of the regular pentagon
+        double apothem = 0.5 * sideLength / Math.tan(Math.PI / 5);
+        double basePerimeter = 5 * sideLength; 
         return 0.5 * basePerimeter * apothem;
     }
 
@@ -54,11 +54,10 @@ class RightRegularPentagonalPrism {
     // Calculate the surface area of the pentagonal prism
     public double getSurfaceArea() {
         double baseArea = getBaseArea();
-        double lateralArea = 5 * sideLength * height; // Surface area of the five rectangular sides
+        double lateralArea = 5 * sideLength * height;
         return 2 * baseArea + lateralArea;
     }
 
-    @Override
     public String toString() {
         return "RightRegularPentagonalPrism [sideLength=" + sideLength + ", height=" + height + "]";
     }

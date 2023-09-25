@@ -69,7 +69,6 @@ class RightRectangularPrism {
         return length * width;
     }
 
-    @Override
     public String toString() {
         return "RightRectangularPrism [length=" + length + ", width=" + width + ", height=" + height + "]";
     }

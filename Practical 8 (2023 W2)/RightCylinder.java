@@ -54,7 +54,6 @@ public class RightCylinder {
         return Math.PI * Math.pow(radius, 2);
     }
 
-    @Override
     public String toString() {
         return "RightCylinder [height=" + height + ", radius=" + radius + "]";
     }
