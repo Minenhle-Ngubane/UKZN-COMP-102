@@ -5,9 +5,9 @@ public class TestRightRectangularPrism {
 
         // Create ten random RightRectangularPrism objects and add them to the list
         for (int i = 0; i < prismList.length; i++) {
-            double length = Math.random() * 30;
-            double width = Math.random() * 26;  
-            double height = Math.random() * 26; 
+            double length = (Math.random() * 30) + 1;
+            double width = (Math.random() * 26) + 1;  
+            double height = (Math.random() * 26) + 1; 
             prismList[i] = new RightRectangularPrism(length, width, height);
         }
 

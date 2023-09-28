@@ -5,8 +5,8 @@ public class TestRightCylinder {
 
         // Create ten random RightCylinder objects and add them to the list
         for (int i = 0; i < rightCylinders.length; i++) {
-            double height = Math.random() * 30;
-            double radius = Math.random() * 26;
+            double height = (Math.random() * 30) + 1;
+            double radius = (Math.random() * 26) + 1;
             rightCylinders[i] = new RightCylinder(height, radius);
         }
 

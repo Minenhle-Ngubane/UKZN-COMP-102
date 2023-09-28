@@ -5,8 +5,8 @@ public class TestRightRegularPentagonalPrism {
 
         // Create ten random RightRegularPentagonalPrism objects and add them to the list
         for (int i = 0; i < prismList.length; i++) {
-            double sideLength = Math.random() * 30;
-            double height = Math.random() * 26;   
+            double sideLength = (Math.random() * 30) + 1;
+            double height = (Math.random() * 26) + 1;   
             prismList[i] = new RightRegularPentagonalPrism(sideLength, height);
         }
 
