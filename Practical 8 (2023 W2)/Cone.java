@@ -8,7 +8,8 @@ class Cone {
             this.height = height;
             this.radius = radius;
         } else {
-            throw new IllegalArgumentException("Height and radius must be greater than 0.");
+            System.out.println("Error: Height and radius must be greater than 0.");
+            System.exit(1);
         }
     }
 
@@ -21,7 +22,8 @@ class Cone {
         if (height > 0) {
             this.height = height;
         } else {
-            throw new IllegalArgumentException("Height must be greater than 0.");
+            System.out.println("Error: Height must be greater than 0.");
+            System.exit(1);
         }
     }
 
@@ -33,7 +35,8 @@ class Cone {
         if (radius > 0) {
             this.radius = radius;
         } else {
-            throw new IllegalArgumentException("Radius must be greater than 0.");
+            System.out.println("Error: Radius must be greater than 0.");
+            System.exit(1);
         }
     }
 

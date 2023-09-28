@@ -10,7 +10,8 @@ class RightRectangularPrism {
             this.width = width;
             this.height = height;
         } else {
-            throw new IllegalArgumentException("Length, width, and height must be greater than 0.");
+            System.out.println("Error: Length, width, and height must be greater than 0.");
+            System.exit(1);
         }
     }
 
@@ -23,7 +24,8 @@ class RightRectangularPrism {
         if (length > 0) {
             this.length = length;
         } else {
-            throw new IllegalArgumentException("Length must be greater than 0.");
+            System.out.println("Error: Length must be greater than 0.");
+            System.exit(1);
         }
     }
 
@@ -35,7 +37,8 @@ class RightRectangularPrism {
         if (width > 0) {
             this.width = width;
         } else {
-            throw new IllegalArgumentException("Width must be greater than 0.");
+            System.out.println("Error: Width must be greater than 0.");
+            System.exit(1);
         }
     }
 
@@ -47,7 +50,9 @@ class RightRectangularPrism {
         if (height > 0) {
             this.height = height;
         } else {
-            throw new IllegalArgumentException("Height must be greater than 0.");
+            System.out.println("Error: Height must be greater than 0.");
+            System.exit(1);
+            
         }
     }
 

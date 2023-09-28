@@ -8,7 +8,8 @@ class RightRegularPentagonalPrism {
             this.sideLength = sideLength;
             this.height = height;
         } else {
-            throw new IllegalArgumentException("Side length and height must be greater than 0.");
+            System.out.println("Error: Side length and height must be greater than 0.");
+            System.exit(1);
         }
     }
 
@@ -21,7 +22,8 @@ class RightRegularPentagonalPrism {
         if (sideLength > 0) {
             this.sideLength = sideLength;
         } else {
-            throw new IllegalArgumentException("Side length must be greater than 0.");
+            System.out.println("Error: Side length must be greater than 0.");
+            System.exit(1);
         }
     }
 
@@ -33,7 +35,8 @@ class RightRegularPentagonalPrism {
         if (height > 0) {
             this.height = height;
         } else {
-            throw new IllegalArgumentException("Height must be greater than 0.");
+            System.out.println("Error: Height must be greater than 0.");
+            System.exit(1);
         }
     }
 
