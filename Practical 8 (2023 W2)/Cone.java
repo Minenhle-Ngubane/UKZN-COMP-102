@@ -2,7 +2,7 @@ class Cone {
     private double height;
     private double radius;
 
-    // Constructor
+    
     public Cone(double height, double radius) {
         if (height > 0 && radius > 0) {
             this.height = height;
