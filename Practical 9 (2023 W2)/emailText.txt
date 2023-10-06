@@ -1,0 +1,16 @@
+Dempster, Mr Rob  	5607  	dempster@cs.ukzn.ac.za  	Seminars + Quality Rep
+Els, Mr Leonard (Tech) 	5013 	els@ukzn.ac.za 	Technical (management)
+Els, Mrs Rosanne 	5662 	elsr@cs.ukzn.ac.za 	Programming Contests
+Moodley, Mr Shaun (Tech) 	6125 	moodleyshacs.ukzn.ac.za 	Technical (servers)
+Murrell, Prof Hugh 	5646 	murrell.h@gmail.com 	Head of School
+Dunkerley, Mr Kyle 	5448 	Technical (labs)
+Dudley, Mr Jonathan 	5650 	Computer literacy
+Pillay, Dr Nelishia 	5644 	pillayn32@yahoo.com 	Library
+Safla, Mr Aslam 	5642 	saflaa@cs.ukzn.ac.za 	Demonstrators (PMB) +  Academic Support Rep
+Wilson, Mrs Jenny (AAO) 5645 	wilsonj@ukzn.com 	Admin Officer
+Westville 	+27 31 260- 		
+Baboolal, Prof Satyanand 	7897 	baboolals@onemail.net 	Deputy Head duties
+Balmakhun, Mrs Anira (AAO) 	3018 	balmakhun@cs.ukzn.ac.za 	Admin Officer
+Bangura, Mr Sheka 		bangurasl.cs@ukzn.ac.za 	Demonstrators
+Barbour, Mr Graham 	1175 	barbour@cs.ukzn.ac.za 	Networking Laboratory
+Dube, Mr Erick 	1035 	dubee2@cs.ukzn.ac.za 	Undergraduates
