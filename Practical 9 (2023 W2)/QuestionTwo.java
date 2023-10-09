@@ -5,44 +5,58 @@ import java.io.File;
 import java.io.PrintWriter;
 
 public class QuestionTwo {
-    public static void main(String[] args) throws IOException {
-        // Create new input file instance to read data from
+    public static void main(String[] args) {
         File file = new File("separateData.txt");
-        Scanner input = new Scanner(file);
-
-        // Counter to control while loop
-        int iteration = 0; 
-
-        // Array to store student surnames
-        String[] studentSurnames = new String[3];
         
-        // Read input file and store student surnames (first 3 lines)
-        while (input.hasNext() && iteration < 3) {
-            studentSurnames[iteration] = input.next();
-            iteration++;
+        if (file.exists()) {
+            String[] studentSurnames = readFileAndGetStudentSurnames(file);
+            createFileForEachStudent(studentSurnames, file);
+        } else {
+            System.out.printf("This file does not exist: %s", file);
         }
+    }
 
-        // Close input file
-        input.close();
-
+    public static void createFileForEachStudent(String[] studentSurnames, File file) {
         for(int i = 0; i < studentSurnames.length; i++){
-            // Create new output file for each student to store their marks
             File outFile = new File(studentSurnames[i]+".txt");
-            PrintWriter output = new PrintWriter(outFile);
-
-            // Reopen the input file for each student
-            Scanner newInput = new Scanner(file);
-
-            while (newInput.hasNext()) {
-                String str = newInput.nextLine();
-                if(str.contains(studentSurnames[i]+" ")) {
-                    output.println(str);
-                }
-            }
             
-            // Close input and output file
-            newInput.close();
-            output.close();
+            try {
+                PrintWriter output = new PrintWriter(outFile);
+                Scanner newInput = new Scanner(file); // Reopen the input file for each student
+
+                while (newInput.hasNext()) {
+                    String str = newInput.nextLine();
+                    if(str.contains(studentSurnames[i]+" ")) {
+                        output.println(str);
+                    }
+                }
+                
+                newInput.close();
+                output.close();
+            } catch (IOException ex) {
+                System.out.println("Something went wrong");
+            }
+        }
+    }
+
+    public static String[] readFileAndGetStudentSurnames(File file) {
+        int iteration = 0; // Counter to control while loop
+        String[] studentSurnames = new String[3]; // Array to store student surnames
+
+        try {
+            Scanner input = new Scanner(file);
+
+            // Read input file and store student surnames (first 3 lines)
+            while (input.hasNext() && iteration < 3) {
+                studentSurnames[iteration] = input.next();
+                iteration++;
+            }
+
+            input.close();
+            return studentSurnames;
+        } catch (IOException ex) {
+            System.out.println("Something went wrong");
+            return studentSurnames;
         }
     }
 }

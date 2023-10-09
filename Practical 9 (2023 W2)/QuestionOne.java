@@ -4,35 +4,50 @@ import java.io.IOException;
 import java.io.File;
 
 public class QuestionOne {
-    public static void main(String[] args) throws IOException {
-        // Create new input file instance to read data from
+    public static void main(String[] args) {
         File file = new File("text.txt");
-        Scanner input = new Scanner(file);
 
-        int numberOfLines = 0;
-        int numberOfWords = 0;
-        int sum = 0;
+        if (file.exists()) {
+            String outputString = readFile(file);
+            System.out.println(outputString);
+        } else {
+            System.out.printf("This file does not exist: %s", file);
+        }
+    }
 
-        while (input.hasNext()) {
-            numberOfLines++;
+    public static String readFile(File file) {
+        String outputString = "";
 
-            String line = input.nextLine().trim();
-            if (!line.isEmpty()) {
-                String[] words = line.split("\\s+");
-                numberOfWords += words.length;
+        try {
+            Scanner input = new Scanner(file);
+    
+            int numberOfLines = 0;
+            int numberOfWords = 0;
+            int sum = 0;
 
-                for (String word : words) {
-                    sum += word.length();
+            while (input.hasNext()) {
+                numberOfLines++;
+
+                String line = input.nextLine().trim();
+                if (!line.isEmpty()) {
+                    String[] words = line.split("\\s+");
+                    numberOfWords += words.length;
+
+                    for (String word : words) {
+                        sum += word.length();
+                    }
                 }
             }
+
+            outputString += "There are "+ numberOfLines +" lines of text in the file.\n";
+            outputString += "There are "+ numberOfWords +" words in the file.\n";
+            outputString += "The average number length of words is " + (int)(sum / numberOfWords);
+
+            input.close();
+            return outputString;
+        } catch(IOException ex) {
+            System.out.println("Something went wrong");
+            return outputString;
         }
-
-        // Print results to the console
-        System.out.printf("There are %d lines of text in the file.\n", numberOfLines);
-        System.out.printf("There are %d words in the file.\n", numberOfWords);
-        System.out.printf("The average number length of words is %d.", (int)(sum / numberOfWords));
-
-        // Close inout file
-        input.close();
     }
 }
