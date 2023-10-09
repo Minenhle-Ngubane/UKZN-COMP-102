@@ -12,7 +12,10 @@ The repository is structured as follows:
 - **Practical 2/**: Contains the source code and related files for Practical 2.
 - **Practical 3/**: Contains the source code and related files for Practical 3.
 - **Practical 4/**: Contains the source code and related files for Practical 4.
-- **Practical 5/**: Contains the source code and related files for Practical 5.
+- **Practical 6/**: Contains the source code and related files for Practical 6.
+- **Practical 7/**: Contains the source code and related files for Practical 7.
+- **Practical 8/**: Contains the source code and related files for Practical 8.
+- **Practical 9/**: Contains the source code and related files for Practical 9.
 
 Each practical folder includes the solution implemented in Java, documentation, and any additional resources that may be helpful for understanding the solution.
 
